@@ -1,0 +1,51 @@
+{
+  "config": {"view": {"continuousWidth": 400, "continuousHeight": 300}},
+  "data": {
+    "url": "https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/licenses_fall2022.csv"
+  },
+  "mark": "point",
+  "encoding": {
+    "color": {
+      "condition": {
+        "field": "License Status",
+        "type": "nominal",
+        "selection": "selector002"
+      },
+      "value": "grey"
+    },
+    "tooltip": {"field": "License Type", "type": "nominal"},
+    "x": {
+      "field": "Effective Date",
+      "timeUnit": "yearmonthdate",
+      "title": "Effective Time",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "Expiration",
+      "timeUnit": "yearmonthdate",
+      "title": "Expiration Time",
+      "type": "temporal"
+    }
+  },
+  "height": 500,
+  "selection": {"selector002": {"type": "interval"}},
+  "title": "Scatter for Effective Time and Expiration Time of License",
+  "transform": [
+    {
+      "field": "Expiration Date",
+      "timeUnit": "yearmonthdate",
+      "as": "Expiration"
+    },
+    {
+      "filter": {
+        "field": "Expiration",
+        "range": [
+          {"year": 1975, "month": 1, "date": 1},
+          {"year": 2050, "month": 1, "date": 1}
+        ]
+      }
+    }
+  ],
+  "width": 500,
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json"
+}

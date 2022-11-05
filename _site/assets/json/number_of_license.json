@@ -1,0 +1,43 @@
+{
+  "config": {"view": {"continuousWidth": 400, "continuousHeight": 300}},
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/licenses_fall2022.csv"
+      },
+      "mark": "bar",
+      "encoding": {
+        "color": {
+          "condition": {"value": "orange", "selection": "selector001"},
+          "value": "grey"
+        },
+        "x": {"field": "License Type", "type": "nominal"},
+        "y": {
+          "aggregate": "count",
+          "field": "License Type",
+          "type": "quantitative"
+        }
+      },
+      "height": 500,
+      "selection": {"selector001": {"type": "interval", "encodings": ["x"]}},
+      "title": "Number of License Type",
+      "width": 500
+    },
+    {
+      "mark": {"type": "rule", "color": "firebrick"},
+      "encoding": {
+        "size": {"value": 3},
+        "y": {
+          "aggregate": "count",
+          "field": "License Type",
+          "type": "quantitative"
+        }
+      },
+      "transform": [{"filter": {"selection": "selector001"}}]
+    }
+  ],
+  "data": {
+    "url": "https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/main/data/licenses_fall2022.csv"
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json"
+}
