@@ -23,9 +23,6 @@ Inside this char, the interactivity I added is an auxiliary line. This line will
 
 ---
 
-
-<vegachart schema-url="{{ site.baseurl }}/assets/json/effective_time.json" style="width: 100%"></vegachart>
-
 <!-- these are written in a combo of html and liquid --> 
 
 <div class="left">
