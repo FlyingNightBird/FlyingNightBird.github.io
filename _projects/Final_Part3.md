@@ -1,5 +1,5 @@
 ---
-name: Final_Part3
+name: How unemployment rate has effects on population in WY
 tools: [Python, HTML, vega-lite]
 image: assets/pngs/final.png
 description: final project that uses vega-lite for interactive viz!
@@ -10,8 +10,10 @@ custom_js:
   - justcharts
 ---
 
+Group member: Jiahao Tian/Zhuokun He  
+![picture] (https://github.com/FlyingNightBird/FlyingNightBird.github.io/blob/main/assets/pngs/growth.PNG)
 
-# 1. Number of License Type
+# See the relationship by cities in WY
  This data visualization shows the number of different License Types, and we can see that about three kinds of licenses occupy most of the whole.
 
 The data of the x-axis is License Type, and the data type is Nominal. The y-axis and the interactive count line are the number of License Type, and the data type is quantitative. In this chart, the original color of the bar is orange, if not checked, the bar will be gray. Although I did not use python to process the raw data, in the chart I aggregated the License Type.
