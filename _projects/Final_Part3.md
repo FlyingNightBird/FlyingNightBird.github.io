@@ -12,14 +12,13 @@ custom_js:
 
 Group member: Jiahao Tian/Zhuokun He  
 # The population growth rate in WY
-![growth.PNG](https://github.com/FlyingNightBird/FlyingNightBird.github.io/blob/main/assets/pngs/growth.PNG)  
+![growth.PNG](/assets/pngs/growth.PNG)  
 From the data visualization we can see that the growth rate in WY can only remain the current level or keep going down after 2010.  
 
 
 # The Unemployment Rate in WY  
-![unemployment.PNG](https://github.com/FlyingNightBird/FlyingNightBird.github.io/blob/main/assets/pngs/unemployment.PNG)  
+![unemployment.PNG](/assets/pngs/unemployment.PNG)  
 The tend of umemployment is to go down despite the peak in 2016.  
-![unemployment.PNG](/assets/pngs/unemployment.PNG)
 
 # See the relationship by cities in WY
 This interactive visualization shows the relationship between unemployment and population by cities.
