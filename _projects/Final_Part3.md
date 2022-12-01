@@ -1,7 +1,7 @@
 ---
 name: How unemployment rate has effects on population in WY
 tools: [Python, HTML, vega-lite]
-image: assets/pngs/final.png
+image: assets/pngs/final.PNG
 description: final project that uses vega-lite for interactive viz!
 custom_js:
   - vega.min
