@@ -1,8 +1,8 @@
 ---
 name: Final_Part3
 tools: [Python, HTML, vega-lite]
-image: assets/pngs/visualization.png
-description: This is a "showcase" project that uses vega-lite for interactive viz!
+image: assets/pngs/final.png
+description: final project that uses vega-lite for interactive viz!
 custom_js:
   - vega.min
   - vega-lite.min
