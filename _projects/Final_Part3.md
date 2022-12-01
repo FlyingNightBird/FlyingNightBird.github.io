@@ -19,7 +19,7 @@ The data of the x-axis is License Type, and the data type is Nominal. The y-axis
 Inside this char, the interactivity I added is an auxiliary line. This line will display the total number of selected License Types, which can help users better analyze the number of specific License Types.
 
 
-<vegachart schema-url="{{ site.baseurl }}/assets/json/population_employeement.json" style="width: 100%"></vegachart>
+<vegachart schema-url="{{ site.baseurl }}/assets/json/population_employment.json" style="width: 100%"></vegachart>
 
 ---
 
