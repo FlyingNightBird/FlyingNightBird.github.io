@@ -9,7 +9,7 @@ custom_js:
   - vega-embed.min
   - justcharts
 ---
-Group member: Jiahao Tian/Zhuokun He  
+Group 20 member: Jiahao Tian/Zhuokun He  
 The population growth rates in Wyoming is one of the highest. Wyoming also has an unemployment rate below average.
 These elements may make the relationship between unemployment and population more clear in Wyoming.
 First, Let's check the population growth rate in Wyoming by a glance.
