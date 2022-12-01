@@ -11,17 +11,23 @@ custom_js:
 ---
 
 Group member: Jiahao Tian/Zhuokun He  
-![picture](https://github.com/FlyingNightBird/FlyingNightBird.github.io/blob/main/assets/pngs/growth.PNG)
+# The population growth rate in WY
+![growth.PNG](https://github.com/FlyingNightBird/FlyingNightBird.github.io/blob/main/assets/pngs/growth.PNG)  
+From the data visualization we can see that the growth rate in WY can only remain the current level or keep going down after 2010.  
+
+
+# The Unemployment Rate in WY  
+![unemployment.PNG](https://github.com/FlyingNightBird/FlyingNightBird.github.io/blob/main/assets/pngs/unemployment.PNG)  
+The tend of umemployment is to go down despite the peak in 2016.  
+![unemployment.PNG](/assets/pngs/unemployment.PNG)
 
 # See the relationship by cities in WY
- This data visualization shows the number of different License Types, and we can see that about three kinds of licenses occupy most of the whole.
+This interactive visualization shows the relationship between unemployment and population by cities.
+<vegachart schema-url="{{ site.baseurl }}/assets/json/population_employment.json" style="width: 100%"></vegachart>  
 
-The data of the x-axis is License Type, and the data type is Nominal. The y-axis and the interactive count line are the number of License Type, and the data type is quantitative. In this chart, the original color of the bar is orange, if not checked, the bar will be gray. Although I did not use python to process the raw data, in the chart I aggregated the License Type.
-
-Inside this char, the interactivity I added is an auxiliary line. This line will display the total number of selected License Types, which can help users better analyze the number of specific License Types.
-
-
-<vegachart schema-url="{{ site.baseurl }}/assets/json/population_employment.json" style="width: 100%"></vegachart>
+### citiation  
+1. World Population Review. Wyoming Population 2022 (Demographics, Maps, Graphs). Retrieved Dec 1, 2022, from https://worldpopulationreview.com/states/wyoming-population  
+2. FileUnemployment.org 2022. Retrieved Dec 1, 2022, from https://fileunemployment.org/dataview/us-monthly-unemployment-rate. 
 
 ---
 
