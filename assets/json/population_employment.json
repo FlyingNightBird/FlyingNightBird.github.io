@@ -1,0 +1,1405 @@
+{
+  "config": {"view": {"continuousWidth": 400, "continuousHeight": 300}},
+  "vconcat": [
+    {
+      "mark": "point",
+      "encoding": {
+        "color": {
+          "condition": {
+            "field": "County",
+            "scale": {
+              "domain": [
+                "Wyoming",
+                "Albany",
+                "Big Horn",
+                "Campbell",
+                "Carbon",
+                "Converse",
+                "Crook",
+                "Fremont",
+                "Goshen",
+                "Hot Springs",
+                "Johnson",
+                "Laramie",
+                "Lincoln",
+                "Natrona",
+                "Niobrara",
+                "Park",
+                "Platte",
+                "Sheridan",
+                "Sublette",
+                "Sweetwater",
+                "Teton",
+                "Uinta",
+                "Washakie",
+                "Weston"
+              ],
+              "range": [
+                "#e7ba52",
+                "#a7a7a7",
+                "#aec7e8",
+                "#1f17b4",
+                "#9367bd",
+                "#r9ba53",
+                "#b1a7a8",
+                "#kec1e7",
+                "#2f73b3",
+                "#8465cd",
+                "#d2ba54",
+                "#c2a7a9",
+                "#bec3e6",
+                "#7f47b2",
+                "#6445bd",
+                "#a1ba55",
+                "#d3a7a0",
+                "#fec2e5",
+                "#4f57b1",
+                "#5464ad"
+              ]
+            },
+            "type": "nominal",
+            "selection": "selector001"
+          },
+          "value": "lightgray"
+        },
+        "size": {
+          "field": "NumEmployed",
+          "scale": {"range": [5, 200]},
+          "type": "quantitative"
+        },
+        "x": {
+          "field": "RateUnemployed",
+          "title": "RateUnemployed",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "Population",
+          "scale": {"domain": [0, 110000]},
+          "title": "Population",
+          "type": "quantitative"
+        }
+      },
+      "height": 300,
+      "selection": {"selector001": {"type": "interval", "encodings": ["x"]}},
+      "transform": [{"filter": {"selection": "selector002"}}],
+      "width": 700
+    },
+    {
+      "mark": "bar",
+      "encoding": {
+        "color": {
+          "condition": {
+            "field": "County",
+            "scale": {
+              "domain": [
+                "Wyoming",
+                "Albany",
+                "Big Horn",
+                "Campbell",
+                "Carbon",
+                "Converse",
+                "Crook",
+                "Fremont",
+                "Goshen",
+                "Hot Springs",
+                "Johnson",
+                "Laramie",
+                "Lincoln",
+                "Natrona",
+                "Niobrara",
+                "Park",
+                "Platte",
+                "Sheridan",
+                "Sublette",
+                "Sweetwater",
+                "Teton",
+                "Uinta",
+                "Washakie",
+                "Weston"
+              ],
+              "range": [
+                "#e7ba52",
+                "#a7a7a7",
+                "#aec7e8",
+                "#1f17b4",
+                "#9367bd",
+                "#r9ba53",
+                "#b1a7a8",
+                "#kec1e7",
+                "#2f73b3",
+                "#8465cd",
+                "#d2ba54",
+                "#c2a7a9",
+                "#bec3e6",
+                "#7f47b2",
+                "#6445bd",
+                "#a1ba55",
+                "#d3a7a0",
+                "#fec2e5",
+                "#4f57b1",
+                "#5464ad"
+              ]
+            },
+            "type": "nominal",
+            "selection": "selector002"
+          },
+          "value": "lightgray"
+        },
+        "x": {"aggregate": "count", "type": "quantitative"},
+        "y": {"field": "County", "type": "nominal"}
+      },
+      "selection": {"selector002": {"type": "multi", "encodings": ["color"]}},
+      "transform": [{"filter": {"selection": "selector001"}}],
+      "width": 700
+    }
+  ],
+  "data": {"name": "data-96092b18d59734d07ea8b9e794408636"},
+  "title": "Population with employeement number and unemployeement rate in WY",
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json",
+  "datasets": {
+    "data-96092b18d59734d07ea8b9e794408636": [
+      {
+        "id": 56001,
+        "State": "WY",
+        "County": "Albany",
+        "Year": "2014",
+        "Population": 37620,
+        "NumEmployed": 19996,
+        "RateUnemployed": 3.6
+      },
+      {
+        "id": 56003,
+        "State": "WY",
+        "County": "Big Horn",
+        "Year": "2014",
+        "Population": 11853,
+        "NumEmployed": 5027,
+        "RateUnemployed": 4.7
+      },
+      {
+        "id": 56005,
+        "State": "WY",
+        "County": "Campbell",
+        "Year": "2014",
+        "Population": 48130,
+        "NumEmployed": 22575,
+        "RateUnemployed": 3.5
+      },
+      {
+        "id": 56007,
+        "State": "WY",
+        "County": "Carbon",
+        "Year": "2014",
+        "Population": 15872,
+        "NumEmployed": 7577,
+        "RateUnemployed": 4.2
+      },
+      {
+        "id": 56009,
+        "State": "WY",
+        "County": "Converse",
+        "Year": "2014",
+        "Population": 14201,
+        "NumEmployed": 8463,
+        "RateUnemployed": 3.2
+      },
+      {
+        "id": 56011,
+        "State": "WY",
+        "County": "Crook",
+        "Year": "2014",
+        "Population": 7234,
+        "NumEmployed": 3647,
+        "RateUnemployed": 4.1
+      },
+      {
+        "id": 56013,
+        "State": "WY",
+        "County": "Fremont",
+        "Year": "2014",
+        "Population": 40565,
+        "NumEmployed": 18062,
+        "RateUnemployed": 5.2
+      },
+      {
+        "id": 56015,
+        "State": "WY",
+        "County": "Goshen",
+        "Year": "2014",
+        "Population": 13522,
+        "NumEmployed": 6274,
+        "RateUnemployed": 3.8
+      },
+      {
+        "id": 56017,
+        "State": "WY",
+        "County": "Hot Springs",
+        "Year": "2014",
+        "Population": 4786,
+        "NumEmployed": 2131,
+        "RateUnemployed": 4.4
+      },
+      {
+        "id": 56019,
+        "State": "WY",
+        "County": "Johnson",
+        "Year": "2014",
+        "Population": 8582,
+        "NumEmployed": 4039,
+        "RateUnemployed": 4.7
+      },
+      {
+        "id": 56021,
+        "State": "WY",
+        "County": "Laramie",
+        "Year": "2014",
+        "Population": 96036,
+        "NumEmployed": 48017,
+        "RateUnemployed": 4.5
+      },
+      {
+        "id": 56023,
+        "State": "WY",
+        "County": "Lincoln",
+        "Year": "2014",
+        "Population": 18567,
+        "NumEmployed": 8787,
+        "RateUnemployed": 5.4
+      },
+      {
+        "id": 56025,
+        "State": "WY",
+        "County": "Natrona",
+        "Year": "2014",
+        "Population": 81377,
+        "NumEmployed": 38760,
+        "RateUnemployed": 4.2
+      },
+      {
+        "id": 56027,
+        "State": "WY",
+        "County": "Niobrara",
+        "Year": "2014",
+        "Population": 2488,
+        "NumEmployed": 1201,
+        "RateUnemployed": 3.5
+      },
+      {
+        "id": 56029,
+        "State": "WY",
+        "County": "Park",
+        "Year": "2014",
+        "Population": 28966,
+        "NumEmployed": 14819,
+        "RateUnemployed": 4.7
+      },
+      {
+        "id": 56031,
+        "State": "WY",
+        "County": "Platte",
+        "Year": "2014",
+        "Population": 8775,
+        "NumEmployed": 4433,
+        "RateUnemployed": 4
+      },
+      {
+        "id": 56033,
+        "State": "WY",
+        "County": "Sheridan",
+        "Year": "2014",
+        "Population": 29852,
+        "NumEmployed": 15122,
+        "RateUnemployed": 4.9
+      },
+      {
+        "id": 56035,
+        "State": "WY",
+        "County": "Sublette",
+        "Year": "2014",
+        "Population": 10151,
+        "NumEmployed": 3917,
+        "RateUnemployed": 4.5
+      },
+      {
+        "id": 56037,
+        "State": "WY",
+        "County": "Sweetwater",
+        "Year": "2014",
+        "Population": 44948,
+        "NumEmployed": 20568,
+        "RateUnemployed": 4.2
+      },
+      {
+        "id": 56039,
+        "State": "WY",
+        "County": "Teton",
+        "Year": "2014",
+        "Population": 22773,
+        "NumEmployed": 15521,
+        "RateUnemployed": 4.9
+      },
+      {
+        "id": 56041,
+        "State": "WY",
+        "County": "Uinta",
+        "Year": "2014",
+        "Population": 20822,
+        "NumEmployed": 8912,
+        "RateUnemployed": 5
+      },
+      {
+        "id": 56043,
+        "State": "WY",
+        "County": "Washakie",
+        "Year": "2014",
+        "Population": 8273,
+        "NumEmployed": 3742,
+        "RateUnemployed": 4.5
+      },
+      {
+        "id": 56045,
+        "State": "WY",
+        "County": "Weston",
+        "Year": "2014",
+        "Population": 7138,
+        "NumEmployed": 3704,
+        "RateUnemployed": 3.5
+      },
+      {
+        "id": 56001,
+        "State": "WY",
+        "County": "Albany",
+        "Year": "2015",
+        "Population": 37960,
+        "NumEmployed": 19917,
+        "RateUnemployed": 3.1
+      },
+      {
+        "id": 56003,
+        "State": "WY",
+        "County": "Big Horn",
+        "Year": "2015",
+        "Population": 11945,
+        "NumEmployed": 5077,
+        "RateUnemployed": 4.4
+      },
+      {
+        "id": 56005,
+        "State": "WY",
+        "County": "Campbell",
+        "Year": "2015",
+        "Population": 49258,
+        "NumEmployed": 22317,
+        "RateUnemployed": 3.9
+      },
+      {
+        "id": 56007,
+        "State": "WY",
+        "County": "Carbon",
+        "Year": "2015",
+        "Population": 15613,
+        "NumEmployed": 7647,
+        "RateUnemployed": 3.7
+      },
+      {
+        "id": 56009,
+        "State": "WY",
+        "County": "Converse",
+        "Year": "2015",
+        "Population": 14297,
+        "NumEmployed": 7444,
+        "RateUnemployed": 3.6
+      },
+      {
+        "id": 56011,
+        "State": "WY",
+        "County": "Crook",
+        "Year": "2015",
+        "Population": 7435,
+        "NumEmployed": 3647,
+        "RateUnemployed": 3.5
+      },
+      {
+        "id": 56013,
+        "State": "WY",
+        "County": "Fremont",
+        "Year": "2015",
+        "Population": 40219,
+        "NumEmployed": 18124,
+        "RateUnemployed": 5.5
+      },
+      {
+        "id": 56015,
+        "State": "WY",
+        "County": "Goshen",
+        "Year": "2015",
+        "Population": 13542,
+        "NumEmployed": 6681,
+        "RateUnemployed": 3.2
+      },
+      {
+        "id": 56017,
+        "State": "WY",
+        "County": "Hot Springs",
+        "Year": "2015",
+        "Population": 4716,
+        "NumEmployed": 2173,
+        "RateUnemployed": 4.1
+      },
+      {
+        "id": 56019,
+        "State": "WY",
+        "County": "Johnson",
+        "Year": "2015",
+        "Population": 8611,
+        "NumEmployed": 4115,
+        "RateUnemployed": 4.8
+      },
+      {
+        "id": 56021,
+        "State": "WY",
+        "County": "Laramie",
+        "Year": "2015",
+        "Population": 96969,
+        "NumEmployed": 46874,
+        "RateUnemployed": 3.9
+      },
+      {
+        "id": 56023,
+        "State": "WY",
+        "County": "Lincoln",
+        "Year": "2015",
+        "Population": 18747,
+        "NumEmployed": 8550,
+        "RateUnemployed": 4.7
+      },
+      {
+        "id": 56025,
+        "State": "WY",
+        "County": "Natrona",
+        "Year": "2015",
+        "Population": 82137,
+        "NumEmployed": 37896,
+        "RateUnemployed": 4.8
+      },
+      {
+        "id": 56027,
+        "State": "WY",
+        "County": "Niobrara",
+        "Year": "2015",
+        "Population": 2496,
+        "NumEmployed": 1260,
+        "RateUnemployed": 3
+      },
+      {
+        "id": 56029,
+        "State": "WY",
+        "County": "Park",
+        "Year": "2015",
+        "Population": 28928,
+        "NumEmployed": 15088,
+        "RateUnemployed": 4.2
+      },
+      {
+        "id": 56031,
+        "State": "WY",
+        "County": "Platte",
+        "Year": "2015",
+        "Population": 8798,
+        "NumEmployed": 4659,
+        "RateUnemployed": 3.9
+      },
+      {
+        "id": 56033,
+        "State": "WY",
+        "County": "Sheridan",
+        "Year": "2015",
+        "Population": 29883,
+        "NumEmployed": 15276,
+        "RateUnemployed": 4.2
+      },
+      {
+        "id": 56035,
+        "State": "WY",
+        "County": "Sublette",
+        "Year": "2015",
+        "Population": 10044,
+        "NumEmployed": 4116,
+        "RateUnemployed": 5.1
+      },
+      {
+        "id": 56037,
+        "State": "WY",
+        "County": "Sweetwater",
+        "Year": "2015",
+        "Population": 44719,
+        "NumEmployed": 20635,
+        "RateUnemployed": 4.6
+      },
+      {
+        "id": 56039,
+        "State": "WY",
+        "County": "Teton",
+        "Year": "2015",
+        "Population": 23047,
+        "NumEmployed": 15111,
+        "RateUnemployed": 3.8
+      },
+      {
+        "id": 56041,
+        "State": "WY",
+        "County": "Uinta",
+        "Year": "2015",
+        "Population": 20763,
+        "NumEmployed": 8739,
+        "RateUnemployed": 4.9
+      },
+      {
+        "id": 56043,
+        "State": "WY",
+        "County": "Washakie",
+        "Year": "2015",
+        "Population": 8278,
+        "NumEmployed": 3932,
+        "RateUnemployed": 4.1
+      },
+      {
+        "id": 56045,
+        "State": "WY",
+        "County": "Weston",
+        "Year": "2015",
+        "Population": 7208,
+        "NumEmployed": 3678,
+        "RateUnemployed": 3.4
+      },
+      {
+        "id": 56001,
+        "State": "WY",
+        "County": "Albany",
+        "Year": "2016",
+        "Population": 37923,
+        "NumEmployed": 20056,
+        "RateUnemployed": 3.2
+      },
+      {
+        "id": 56003,
+        "State": "WY",
+        "County": "Big Horn",
+        "Year": "2016",
+        "Population": 11941,
+        "NumEmployed": 5177,
+        "RateUnemployed": 5
+      },
+      {
+        "id": 56005,
+        "State": "WY",
+        "County": "Campbell",
+        "Year": "2016",
+        "Population": 48745,
+        "NumEmployed": 22090,
+        "RateUnemployed": 7.2
+      },
+      {
+        "id": 56007,
+        "State": "WY",
+        "County": "Carbon",
+        "Year": "2016",
+        "Population": 15689,
+        "NumEmployed": 7651,
+        "RateUnemployed": 4.7
+      },
+      {
+        "id": 56009,
+        "State": "WY",
+        "County": "Converse",
+        "Year": "2016",
+        "Population": 14094,
+        "NumEmployed": 7209,
+        "RateUnemployed": 6.3
+      },
+      {
+        "id": 56011,
+        "State": "WY",
+        "County": "Crook",
+        "Year": "2016",
+        "Population": 7499,
+        "NumEmployed": 3585,
+        "RateUnemployed": 4.6
+      },
+      {
+        "id": 56013,
+        "State": "WY",
+        "County": "Fremont",
+        "Year": "2016",
+        "Population": 40200,
+        "NumEmployed": 18436,
+        "RateUnemployed": 7.2
+      },
+      {
+        "id": 56015,
+        "State": "WY",
+        "County": "Goshen",
+        "Year": "2016",
+        "Population": 13306,
+        "NumEmployed": 6782,
+        "RateUnemployed": 3.5
+      },
+      {
+        "id": 56017,
+        "State": "WY",
+        "County": "Hot Springs",
+        "Year": "2016",
+        "Population": 4654,
+        "NumEmployed": 2261,
+        "RateUnemployed": 4.8
+      },
+      {
+        "id": 56019,
+        "State": "WY",
+        "County": "Johnson",
+        "Year": "2016",
+        "Population": 8484,
+        "NumEmployed": 4056,
+        "RateUnemployed": 5.4
+      },
+      {
+        "id": 56021,
+        "State": "WY",
+        "County": "Laramie",
+        "Year": "2016",
+        "Population": 97887,
+        "NumEmployed": 46850,
+        "RateUnemployed": 4.2
+      },
+      {
+        "id": 56023,
+        "State": "WY",
+        "County": "Lincoln",
+        "Year": "2016",
+        "Population": 19072,
+        "NumEmployed": 8500,
+        "RateUnemployed": 4.7
+      },
+      {
+        "id": 56025,
+        "State": "WY",
+        "County": "Natrona",
+        "Year": "2016",
+        "Population": 80909,
+        "NumEmployed": 37776,
+        "RateUnemployed": 7.2
+      },
+      {
+        "id": 56027,
+        "State": "WY",
+        "County": "Niobrara",
+        "Year": "2016",
+        "Population": 2468,
+        "NumEmployed": 1276,
+        "RateUnemployed": 3.3
+      },
+      {
+        "id": 56029,
+        "State": "WY",
+        "County": "Park",
+        "Year": "2016",
+        "Population": 29213,
+        "NumEmployed": 15152,
+        "RateUnemployed": 4.8
+      },
+      {
+        "id": 56031,
+        "State": "WY",
+        "County": "Platte",
+        "Year": "2016",
+        "Population": 8662,
+        "NumEmployed": 4638,
+        "RateUnemployed": 4.8
+      },
+      {
+        "id": 56033,
+        "State": "WY",
+        "County": "Sheridan",
+        "Year": "2016",
+        "Population": 29964,
+        "NumEmployed": 15313,
+        "RateUnemployed": 4.7
+      },
+      {
+        "id": 56035,
+        "State": "WY",
+        "County": "Sublette",
+        "Year": "2016",
+        "Population": 9982,
+        "NumEmployed": 4100,
+        "RateUnemployed": 6.5
+      },
+      {
+        "id": 56037,
+        "State": "WY",
+        "County": "Sweetwater",
+        "Year": "2016",
+        "Population": 44222,
+        "NumEmployed": 20758,
+        "RateUnemployed": 6.1
+      },
+      {
+        "id": 56039,
+        "State": "WY",
+        "County": "Teton",
+        "Year": "2016",
+        "Population": 23234,
+        "NumEmployed": 15114,
+        "RateUnemployed": 3.5
+      },
+      {
+        "id": 56041,
+        "State": "WY",
+        "County": "Uinta",
+        "Year": "2016",
+        "Population": 20682,
+        "NumEmployed": 8765,
+        "RateUnemployed": 5.8
+      },
+      {
+        "id": 56043,
+        "State": "WY",
+        "County": "Washakie",
+        "Year": "2016",
+        "Population": 8165,
+        "NumEmployed": 3982,
+        "RateUnemployed": 4.8
+      },
+      {
+        "id": 56045,
+        "State": "WY",
+        "County": "Weston",
+        "Year": "2016",
+        "Population": 7220,
+        "NumEmployed": 3637,
+        "RateUnemployed": 5
+      },
+      {
+        "id": 56001,
+        "State": "WY",
+        "County": "Albany",
+        "Year": "2017",
+        "Population": 38459,
+        "NumEmployed": 20299,
+        "RateUnemployed": 2.9
+      },
+      {
+        "id": 56003,
+        "State": "WY",
+        "County": "Big Horn",
+        "Year": "2017",
+        "Population": 11859,
+        "NumEmployed": 5263,
+        "RateUnemployed": 4.4
+      },
+      {
+        "id": 56005,
+        "State": "WY",
+        "County": "Campbell",
+        "Year": "2017",
+        "Population": 46402,
+        "NumEmployed": 22648,
+        "RateUnemployed": 5
+      },
+      {
+        "id": 56007,
+        "State": "WY",
+        "County": "Carbon",
+        "Year": "2017",
+        "Population": 15252,
+        "NumEmployed": 7969,
+        "RateUnemployed": 4.1
+      },
+      {
+        "id": 56009,
+        "State": "WY",
+        "County": "Converse",
+        "Year": "2017",
+        "Population": 13733,
+        "NumEmployed": 7385,
+        "RateUnemployed": 4.6
+      },
+      {
+        "id": 56011,
+        "State": "WY",
+        "County": "Crook",
+        "Year": "2017",
+        "Population": 7397,
+        "NumEmployed": 3567,
+        "RateUnemployed": 3.6
+      },
+      {
+        "id": 56013,
+        "State": "WY",
+        "County": "Fremont",
+        "Year": "2017",
+        "Population": 39818,
+        "NumEmployed": 18591,
+        "RateUnemployed": 5.7
+      },
+      {
+        "id": 56015,
+        "State": "WY",
+        "County": "Goshen",
+        "Year": "2017",
+        "Population": 13361,
+        "NumEmployed": 6784,
+        "RateUnemployed": 3
+      },
+      {
+        "id": 56017,
+        "State": "WY",
+        "County": "Hot Springs",
+        "Year": "2017",
+        "Population": 4686,
+        "NumEmployed": 2308,
+        "RateUnemployed": 4
+      },
+      {
+        "id": 56019,
+        "State": "WY",
+        "County": "Johnson",
+        "Year": "2017",
+        "Population": 8447,
+        "NumEmployed": 3981,
+        "RateUnemployed": 4.3
+      },
+      {
+        "id": 56021,
+        "State": "WY",
+        "County": "Laramie",
+        "Year": "2017",
+        "Population": 98377,
+        "NumEmployed": 46765,
+        "RateUnemployed": 3.8
+      },
+      {
+        "id": 56023,
+        "State": "WY",
+        "County": "Lincoln",
+        "Year": "2017",
+        "Population": 19278,
+        "NumEmployed": 8313,
+        "RateUnemployed": 3.8
+      },
+      {
+        "id": 56025,
+        "State": "WY",
+        "County": "Natrona",
+        "Year": "2017",
+        "Population": 79586,
+        "NumEmployed": 38073,
+        "RateUnemployed": 5.4
+      },
+      {
+        "id": 56027,
+        "State": "WY",
+        "County": "Niobrara",
+        "Year": "2017",
+        "Population": 2392,
+        "NumEmployed": 1294,
+        "RateUnemployed": 2.8
+      },
+      {
+        "id": 56029,
+        "State": "WY",
+        "County": "Park",
+        "Year": "2017",
+        "Population": 29194,
+        "NumEmployed": 15174,
+        "RateUnemployed": 4.4
+      },
+      {
+        "id": 56031,
+        "State": "WY",
+        "County": "Platte",
+        "Year": "2017",
+        "Population": 8541,
+        "NumEmployed": 4544,
+        "RateUnemployed": 3.8
+      },
+      {
+        "id": 56033,
+        "State": "WY",
+        "County": "Sheridan",
+        "Year": "2017",
+        "Population": 30147,
+        "NumEmployed": 15363,
+        "RateUnemployed": 4
+      },
+      {
+        "id": 56035,
+        "State": "WY",
+        "County": "Sublette",
+        "Year": "2017",
+        "Population": 9745,
+        "NumEmployed": 3958,
+        "RateUnemployed": 4.6
+      },
+      {
+        "id": 56037,
+        "State": "WY",
+        "County": "Sweetwater",
+        "Year": "2017",
+        "Population": 43464,
+        "NumEmployed": 20794,
+        "RateUnemployed": 4.7
+      },
+      {
+        "id": 56039,
+        "State": "WY",
+        "County": "Teton",
+        "Year": "2017",
+        "Population": 23384,
+        "NumEmployed": 14715,
+        "RateUnemployed": 2.9
+      },
+      {
+        "id": 56041,
+        "State": "WY",
+        "County": "Uinta",
+        "Year": "2017",
+        "Population": 20431,
+        "NumEmployed": 8876,
+        "RateUnemployed": 4.7
+      },
+      {
+        "id": 56043,
+        "State": "WY",
+        "County": "Washakie",
+        "Year": "2017",
+        "Population": 8010,
+        "NumEmployed": 4013,
+        "RateUnemployed": 4.1
+      },
+      {
+        "id": 56045,
+        "State": "WY",
+        "County": "Weston",
+        "Year": "2017",
+        "Population": 6968,
+        "NumEmployed": 3761,
+        "RateUnemployed": 4.1
+      },
+      {
+        "id": 56001,
+        "State": "WY",
+        "County": "Albany",
+        "Year": "2018",
+        "Population": 38728,
+        "NumEmployed": 19836,
+        "RateUnemployed": 3.3
+      },
+      {
+        "id": 56003,
+        "State": "WY",
+        "County": "Big Horn",
+        "Year": "2018",
+        "Population": 11877,
+        "NumEmployed": 5272,
+        "RateUnemployed": 4.7
+      },
+      {
+        "id": 56005,
+        "State": "WY",
+        "County": "Campbell",
+        "Year": "2018",
+        "Population": 46299,
+        "NumEmployed": 24606,
+        "RateUnemployed": 4.1
+      },
+      {
+        "id": 56007,
+        "State": "WY",
+        "County": "Carbon",
+        "Year": "2018",
+        "Population": 14879,
+        "NumEmployed": 8061,
+        "RateUnemployed": 3.7
+      },
+      {
+        "id": 56009,
+        "State": "WY",
+        "County": "Converse",
+        "Year": "2018",
+        "Population": 13658,
+        "NumEmployed": 7949,
+        "RateUnemployed": 3.7
+      },
+      {
+        "id": 56011,
+        "State": "WY",
+        "County": "Crook",
+        "Year": "2018",
+        "Population": 7445,
+        "NumEmployed": 3552,
+        "RateUnemployed": 3.2
+      },
+      {
+        "id": 56013,
+        "State": "WY",
+        "County": "Fremont",
+        "Year": "2018",
+        "Population": 39561,
+        "NumEmployed": 18977,
+        "RateUnemployed": 5.2
+      },
+      {
+        "id": 56015,
+        "State": "WY",
+        "County": "Goshen",
+        "Year": "2018",
+        "Population": 13292,
+        "NumEmployed": 6795,
+        "RateUnemployed": 3.3
+      },
+      {
+        "id": 56017,
+        "State": "WY",
+        "County": "Hot Springs",
+        "Year": "2018",
+        "Population": 4568,
+        "NumEmployed": 2282,
+        "RateUnemployed": 3.6
+      },
+      {
+        "id": 56019,
+        "State": "WY",
+        "County": "Johnson",
+        "Year": "2018",
+        "Population": 8446,
+        "NumEmployed": 3966,
+        "RateUnemployed": 4
+      },
+      {
+        "id": 56021,
+        "State": "WY",
+        "County": "Laramie",
+        "Year": "2018",
+        "Population": 98865,
+        "NumEmployed": 46341,
+        "RateUnemployed": 3.9
+      },
+      {
+        "id": 56023,
+        "State": "WY",
+        "County": "Lincoln",
+        "Year": "2018",
+        "Population": 19445,
+        "NumEmployed": 7955,
+        "RateUnemployed": 3.8
+      },
+      {
+        "id": 56025,
+        "State": "WY",
+        "County": "Natrona",
+        "Year": "2018",
+        "Population": 79175,
+        "NumEmployed": 40431,
+        "RateUnemployed": 4.6
+      },
+      {
+        "id": 56027,
+        "State": "WY",
+        "County": "Niobrara",
+        "Year": "2018",
+        "Population": 2400,
+        "NumEmployed": 1278,
+        "RateUnemployed": 2.8
+      },
+      {
+        "id": 56029,
+        "State": "WY",
+        "County": "Park",
+        "Year": "2018",
+        "Population": 29210,
+        "NumEmployed": 14974,
+        "RateUnemployed": 4.4
+      },
+      {
+        "id": 56031,
+        "State": "WY",
+        "County": "Platte",
+        "Year": "2018",
+        "Population": 8516,
+        "NumEmployed": 4683,
+        "RateUnemployed": 3.7
+      },
+      {
+        "id": 56033,
+        "State": "WY",
+        "County": "Sheridan",
+        "Year": "2018",
+        "Population": 30219,
+        "NumEmployed": 15139,
+        "RateUnemployed": 4
+      },
+      {
+        "id": 56035,
+        "State": "WY",
+        "County": "Sublette",
+        "Year": "2018",
+        "Population": 9798,
+        "NumEmployed": 4298,
+        "RateUnemployed": 4.3
+      },
+      {
+        "id": 56037,
+        "State": "WY",
+        "County": "Sweetwater",
+        "Year": "2018",
+        "Population": 42858,
+        "NumEmployed": 21509,
+        "RateUnemployed": 4.2
+      },
+      {
+        "id": 56039,
+        "State": "WY",
+        "County": "Teton",
+        "Year": "2018",
+        "Population": 23269,
+        "NumEmployed": 14016,
+        "RateUnemployed": 3
+      },
+      {
+        "id": 56041,
+        "State": "WY",
+        "County": "Uinta",
+        "Year": "2018",
+        "Population": 20292,
+        "NumEmployed": 9120,
+        "RateUnemployed": 4.3
+      },
+      {
+        "id": 56043,
+        "State": "WY",
+        "County": "Washakie",
+        "Year": "2018",
+        "Population": 7877,
+        "NumEmployed": 4058,
+        "RateUnemployed": 4.2
+      },
+      {
+        "id": 56045,
+        "State": "WY",
+        "County": "Weston",
+        "Year": "2018",
+        "Population": 6924,
+        "NumEmployed": 3798,
+        "RateUnemployed": 3.5
+      },
+      {
+        "id": 56001,
+        "State": "WY",
+        "County": "Albany",
+        "Year": "2019",
+        "Population": 38880,
+        "NumEmployed": 19516,
+        "RateUnemployed": 3.2
+      },
+      {
+        "id": 56003,
+        "State": "WY",
+        "County": "Big Horn",
+        "Year": "2019",
+        "Population": 11790,
+        "NumEmployed": 5257,
+        "RateUnemployed": 4.4
+      },
+      {
+        "id": 56005,
+        "State": "WY",
+        "County": "Campbell",
+        "Year": "2019",
+        "Population": 46341,
+        "NumEmployed": 25033,
+        "RateUnemployed": 3.8
+      },
+      {
+        "id": 56007,
+        "State": "WY",
+        "County": "Carbon",
+        "Year": "2019",
+        "Population": 14800,
+        "NumEmployed": 7993,
+        "RateUnemployed": 3.5
+      },
+      {
+        "id": 56009,
+        "State": "WY",
+        "County": "Converse",
+        "Year": "2019",
+        "Population": 13822,
+        "NumEmployed": 7980,
+        "RateUnemployed": 2.9
+      },
+      {
+        "id": 56011,
+        "State": "WY",
+        "County": "Crook",
+        "Year": "2019",
+        "Population": 7584,
+        "NumEmployed": 3519,
+        "RateUnemployed": 3.3
+      },
+      {
+        "id": 56013,
+        "State": "WY",
+        "County": "Fremont",
+        "Year": "2019",
+        "Population": 39261,
+        "NumEmployed": 19273,
+        "RateUnemployed": 4.5
+      },
+      {
+        "id": 56015,
+        "State": "WY",
+        "County": "Goshen",
+        "Year": "2019",
+        "Population": 13211,
+        "NumEmployed": 6791,
+        "RateUnemployed": 3.8
+      },
+      {
+        "id": 56017,
+        "State": "WY",
+        "County": "Hot Springs",
+        "Year": "2019",
+        "Population": 4413,
+        "NumEmployed": 2352,
+        "RateUnemployed": 3.5
+      },
+      {
+        "id": 56019,
+        "State": "WY",
+        "County": "Johnson",
+        "Year": "2019",
+        "Population": 8445,
+        "NumEmployed": 4221,
+        "RateUnemployed": 3.7
+      },
+      {
+        "id": 56021,
+        "State": "WY",
+        "County": "Laramie",
+        "Year": "2019",
+        "Population": 99500,
+        "NumEmployed": 46027,
+        "RateUnemployed": 3.5
+      },
+      {
+        "id": 56023,
+        "State": "WY",
+        "County": "Lincoln",
+        "Year": "2019",
+        "Population": 19830,
+        "NumEmployed": 7706,
+        "RateUnemployed": 3.4
+      },
+      {
+        "id": 56025,
+        "State": "WY",
+        "County": "Natrona",
+        "Year": "2019",
+        "Population": 79858,
+        "NumEmployed": 41051,
+        "RateUnemployed": 4
+      },
+      {
+        "id": 56027,
+        "State": "WY",
+        "County": "Niobrara",
+        "Year": "2019",
+        "Population": 2356,
+        "NumEmployed": 1288,
+        "RateUnemployed": 2.8
+      },
+      {
+        "id": 56029,
+        "State": "WY",
+        "County": "Park",
+        "Year": "2019",
+        "Population": 29194,
+        "NumEmployed": 14842,
+        "RateUnemployed": 4.2
+      },
+      {
+        "id": 56031,
+        "State": "WY",
+        "County": "Platte",
+        "Year": "2019",
+        "Population": 8393,
+        "NumEmployed": 4534,
+        "RateUnemployed": 3.6
+      },
+      {
+        "id": 56033,
+        "State": "WY",
+        "County": "Sheridan",
+        "Year": "2019",
+        "Population": 30485,
+        "NumEmployed": 14963,
+        "RateUnemployed": 3.6
+      },
+      {
+        "id": 56035,
+        "State": "WY",
+        "County": "Sublette",
+        "Year": "2019",
+        "Population": 9831,
+        "NumEmployed": 4601,
+        "RateUnemployed": 4.7
+      },
+      {
+        "id": 56037,
+        "State": "WY",
+        "County": "Sweetwater",
+        "Year": "2019",
+        "Population": 42343,
+        "NumEmployed": 22061,
+        "RateUnemployed": 4
+      },
+      {
+        "id": 56039,
+        "State": "WY",
+        "County": "Teton",
+        "Year": "2019",
+        "Population": 23464,
+        "NumEmployed": 13579,
+        "RateUnemployed": 2.8
+      },
+      {
+        "id": 56041,
+        "State": "WY",
+        "County": "Uinta",
+        "Year": "2019",
+        "Population": 20226,
+        "NumEmployed": 9281,
+        "RateUnemployed": 4
+      },
+      {
+        "id": 56043,
+        "State": "WY",
+        "County": "Washakie",
+        "Year": "2019",
+        "Population": 7805,
+        "NumEmployed": 4036,
+        "RateUnemployed": 4.1
+      },
+      {
+        "id": 56045,
+        "State": "WY",
+        "County": "Weston",
+        "Year": "2019",
+        "Population": 6927,
+        "NumEmployed": 3789,
+        "RateUnemployed": 3
+      }
+    ]
+  }
+}
