@@ -11,7 +11,7 @@ custom_js:
 ---
 
 Group member: Jiahao Tian/Zhuokun He  
-![picture] (https://github.com/FlyingNightBird/FlyingNightBird.github.io/blob/main/assets/pngs/growth.PNG)
+![picture](https://github.com/FlyingNightBird/FlyingNightBird.github.io/blob/main/assets/pngs/growth.PNG)
 
 # See the relationship by cities in WY
  This data visualization shows the number of different License Types, and we can see that about three kinds of licenses occupy most of the whole.
