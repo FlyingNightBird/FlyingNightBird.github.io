@@ -1,5 +1,5 @@
 ---
-name: Vega Lite Example Project
+name: Final_Part3
 tools: [Python, HTML, vega-lite]
 image: assets/pngs/visualization.png
 description: This is a "showcase" project that uses vega-lite for interactive viz!
